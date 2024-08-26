@@ -1,0 +1,31 @@
+@import "leaflet/dist/leaflet.css";
+@import "react-leaflet-markercluster/dist/styles.min.css";
+
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+/* CustomMap.css */
+.leaflet-control {
+  background-color: #fff; /* Background color */
+  border-radius: 4px; /* Rounded corners */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Shadow effect */
+}
+
+.leaflet-control-zoom-in,
+.leaflet-control-zoom-out {
+  color: #000; /* Text color */
+}
+
+@keyframes grow {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.5);
+  }
+}
+
+#animatedCircle {
+  animation: grow 2s ease-in-out infinite alternate; /* Play the animation infinitely back and forth */
+}
